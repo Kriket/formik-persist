@@ -22,6 +22,7 @@
     "dist"
   ],
   "scripts": {
+		"prepare": "npm run build",
     "test": "jest --env=jsdom",
     "test:watch": "npm run test -- --watch",
     "start": "cross-env NODE_ENV=development tsc-watch --onSuccess \"rollup -c\"",
